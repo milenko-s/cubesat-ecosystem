@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#"
+     xml:base="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:OpenSourceCubeSatCatalog="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#can_house -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#can_house">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#fits_into"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#complies_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#complies_with">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#implemented_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#dimensions_compatible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#dimensions_compatible"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#electrical_interface_compatible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#electrical_interface_compatible">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#fits_into -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#fits_into"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#hardware_compatible_with_software -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#hardware_compatible_with_software">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#software_compatible_with_hardware"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#implemented_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#implemented_by"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#software_compatible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#software_compatible">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#software_compatible_with_hardware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#software_compatible_with_hardware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#size"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Command_and_Data_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Command_and_Data_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#CubeSat_Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#CubeSat_Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Ground_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Ground_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#System_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Ground_Station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Ground_Station">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Ground_Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Payload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Payload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Power_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Power_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#System_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#System_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Standard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Satellite_Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#System_Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#System_Element"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_PC104 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_PC104">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#CubeSat_Bus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_Power_Board -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_Power_Board">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Power_System"/>
+        <complies_with rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_PC104"/>
+        <electrical_interface_compatible rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#VST104_Board_Sierra"/>
+        <fits_into rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1u_structure"/>
+        <fits_into rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#2u_structure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreSpace_OSDLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreSpace_OSDLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Software"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#OreSat_Backplane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#OreSat_Backplane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#CubeSat_Bus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#VST104_Board_Sierra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#VST104_Board_Sierra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Command_and_Data_System"/>
+        <complies_with rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_PC104"/>
+        <fits_into rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1u_structure"/>
+        <fits_into rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#2u_structure"/>
+        <hardware_compatible_with_software rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreSpace_OSDLP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1u_structure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1u_structure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Structure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1.5u_telescope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#1.5u_telescope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Payload"/>
+        <electrical_interface_compatible rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#LibreCube_Power_Board"/>
+        <electrical_interface_compatible rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#VST104_Board_Sierra"/>
+        <fits_into rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#2u_structure"/>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#2u_structure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#2u_structure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/milenkostarcik/ontologies/OpenSourceCubeSatCatalog#Structure"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
